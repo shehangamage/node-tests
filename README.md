@@ -8,5 +8,5 @@
 	<li>Create test class for that (utils.test.js)</li>
 	<li>Edit test line in package.json: <strong>"test": "mocha **/*.test.js"</strong> </li>
 	<li>Run <strong>npm test</strong></li>
-	<li>To auto restart tests use: <strong>nodemon --exec "npm test"></strong></li>
+	<li>To auto restart tests use: <strong>nodemon --exec "npm test"</strong></li>
 </ol>
