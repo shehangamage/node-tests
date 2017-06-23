@@ -10,9 +10,9 @@
 	<li>Run <strong>npm test</strong></li>
 	<li>To auto restart tests use: <strong>nodemon --exec "npm test"</strong></li>
 	<li>In commit 5: <strong> "test-watch":"nodemon --exec \"npm test\"" </strong> Run <strong>npm run test-watch</strong></li>
-	<li>Adding Assertion library:(mjackson/expect) to install this use: <strong>npm install expect@1.20.2 --save-dev
+	<li>Adding Assertion library:(<a href="https://github.com/mjackson/expect">mjackson/expect</a>) to install this use: <strong>npm install expect@1.20.2 --save-dev
 </strong></li>
-<a href="https://github.com/mjackson/expect">mjackson/expect</a>
+<br>
 <code>
 it('should add two numbers', ()=>{
 	var res = utils.add(55,5);
