@@ -14,13 +14,12 @@
 </strong></li>
 <br>
 <code>
-it('should add two numbers', ()=>{
-	var res = utils.add(55,5);
-
-	if(res !== 60){
-		throw new Error(`Expected 60. but got ${res}`)
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">it(<span style="background-color: #fff0f0">&#39;should add two numbers&#39;</span>, ()<span style="color: #333333">=&gt;</span>{
+	<span style="color: #008800; font-weight: bold">var</span> res <span style="color: #333333">=</span> utils.add(<span style="color: #0000DD; font-weight: bold">55</span>,<span style="color: #0000DD; font-weight: bold">5</span>);
+	<span style="color: #008800; font-weight: bold">if</span>(res <span style="color: #333333">!==</span> <span style="color: #0000DD; font-weight: bold">60</span>){
+		<span style="color: #008800; font-weight: bold">throw</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #007020">Error</span>(<span style="color: #FF0000; background-color: #FFAAAA">`</span>Expected <span style="color: #0000DD; font-weight: bold">60</span>. but got ${res}<span style="color: #FF0000; background-color: #FFAAAA">`</span>)
 	}
-
 });
+</pre></div>
 </code>
 </ol>
