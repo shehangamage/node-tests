@@ -13,6 +13,7 @@
 	<li>Adding Assertion library:(<a href="https://github.com/mjackson/expect">mjackson/expect</a>) to install this use: <strong>npm install expect@1.20.2 --save-dev
 </strong></li>
 <br>
+<h3>Using commonJs</h3>
 <code>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">it(<span style="background-color: #fff0f0">&#39;should add two numbers&#39;</span>, ()<span style="color: #333333">=&gt;</span>{
 	<span style="color: #008800; font-weight: bold">var</span> res <span style="color: #333333">=</span> utils.add(<span style="color: #0000DD; font-weight: bold">55</span>,<span style="color: #0000DD; font-weight: bold">5</span>);
@@ -21,5 +22,9 @@
 	}
 });
 </pre></div>
+</code>
+<h3>Using expect</h3>
+<code>
+	  expect(res).toBe(60);
 </code>
 </ol>
