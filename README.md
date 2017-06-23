@@ -26,12 +26,18 @@ it('should add two numbers', ()=>{
 
 ### Using expect
 
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-  <pre style="margin: 0; line-height: 125%">it(<span style="background-color: #fff0f0">'should add two numbers'</span>, ()<span style="color: #333333">=&gt;</span>{
-<span style="color: #008800; font-weight: bold">var</span> res <span style="color: #333333">=</span> utils.add(<span style="color: #0000DD; font-weight: bold">55</span>,<span style="color: #0000DD; font-weight: bold">5</span>);
+```
+it('sholud add one number',()=>{
+    var res = utils.squre(3);
 
-expect(res).toBe(<span style="color: #0000DD; font-weight: bold">60</span>);
+    expect(res).toBe(9).toBeA('number');
 
 });
-</pre>
-</div>
+```
+### Using expect with objects
+** when we use equal we need to use tiEqual method.for objects toBe not working**
+
+```
+expect({name:"Shehan"}).toEqual({name:"Shehan"});
+expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
+```
