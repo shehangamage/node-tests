@@ -35,7 +35,7 @@ it('sholud add one number',()=>{
 });
 ```
 ### Using expect with objects
-** when we use equal we need to use tiEqual method.for objects toBe not working**
+** when we working with object we need to use toEqual method .for objects toBe not working**
 
 ```
 expect({name:"Shehan"}).toEqual({name:"Shehan"});
