@@ -3,33 +3,44 @@ const expect = require('expect');
 
 var app = require('./server').app;
 
-it('sholud return Hello express! response',(done)=>{
+describe('Server', () => {
 
-  request(app)
-    .get('/')
-    .expect(200)
-    .expect('Hello express')
-    .end(done);
-});
+  describe('#/', () => {
+    it('sholud return Hello express! response', (done) => {
 
-it('should be return 404', (done)=>{
-  request(app)
-  .get('/error')
-  .expect(404)
-  .expect({
-    error: 'Page not found.'
-  })
-  .end(done);
-});
-
-it('should be return 500',(done)=>{
-  request(app)
-  .get('/more')
-  .expect(500)
-  .expect((res)=>{
-    expect(res.body).toInclude({
-      error: 'Server not found.'
+      request(app)
+        .get('/')
+        .expect(200)
+        .expect('Hello express')
+        .end(done);
     });
-  })
-  .end(done);
+  });
+
+  describe('#/error', () => {
+    it('should be return 404', (done) => {
+      request(app)
+        .get('/error')
+        .expect(404)
+        .expect({
+          error: 'Page not found.'
+        })
+        .end(done);
+    });
+  });
+
+  describe('/more', () => {
+    it('should be return 500', (done) => {
+      request(app)
+        .get('/more')
+        .expect(500)
+        .expect((res) => {
+          expect(res.body).toInclude({
+            error: 'Server not found.'
+          });
+        })
+        .end(done);
+    });
+  });
+
+
 });

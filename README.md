@@ -66,3 +66,15 @@ expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
     1. install Express and create **server.js**.
     2. install ([supertest](https://github.com/visionmedia/supertest)) **npm install supertest --save-dev**
     3. Create **server.test.js** file.
+
+11. Organizing test with **describe()**.
+      using **describe()** we can organize out testing code
+
+      ```
+      describe('sometext', ()=>{
+        //add test functions
+        //add test functions
+        //add test functions
+        });
+      ```
+      
