@@ -78,4 +78,6 @@ expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
         });
       ```
 
-12. Test spies   
+12. Test **spies**   
+
+13. Using **rewire** with spies **npm install rewire --save-dev**

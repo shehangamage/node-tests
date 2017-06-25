@@ -1,10 +1,7 @@
-const db = require('./db');
+var db = require('./db');
 
 module.exports.handleSignup = (email, password)=>{
 
-  db.saveUser({
-    email: email,
-    password: password
-  });
+  db.saveUser({email,password});
 
 };
