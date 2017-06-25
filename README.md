@@ -43,7 +43,7 @@ expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
 ```
 
 9. Asynchronous code testing with mocha
-      ****when we using async function we need to tell mocha that function is a async function. for that we can use 'done()'
+     when we using async function we need to tell mocha that function is a async function. for that we can use **done()**
 
       ```
       module.exports.asynAdd = (a, b, callback)=>{
