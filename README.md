@@ -42,7 +42,7 @@ expect({name:"Shehan"}).toEqual({name:"Shehan"});
 expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
 ```
 
-9. Asynchronous code testing with mocha
+9. Asynchronous code testing with mocha.
      when we using async function we need to tell mocha that function is a async function. for that we can use **done()**
 
       ```
@@ -61,3 +61,8 @@ expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
           });
       });
       ```
+
+10. Testing Express applications with supertest and mocha.
+    1. install Express and create **server.js**.
+    2. install ([supertest](https://github.com/visionmedia/supertest)) **npm install supertest --save-dev**
+    3. Create **server.test.js** file.
