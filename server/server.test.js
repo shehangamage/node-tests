@@ -5,7 +5,7 @@ var app = require('./server').app;
 
 describe('Server', () => {
 
-  describe('#/', () => {
+  describe('GET /', () => {
     it('sholud return Hello express! response', (done) => {
 
       request(app)
@@ -16,7 +16,7 @@ describe('Server', () => {
     });
   });
 
-  describe('#/error', () => {
+  describe('GET /error', () => {
     it('should be return 404', (done) => {
       request(app)
         .get('/error')
@@ -28,7 +28,7 @@ describe('Server', () => {
     });
   });
 
-  describe('/more', () => {
+  describe('GET /more', () => {
     it('should be return 500', (done) => {
       request(app)
         .get('/more')

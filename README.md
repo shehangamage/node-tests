@@ -77,4 +77,5 @@ expect({name:"Shehan"}).toNotEqual({name:"Gamage"});
         //add test functions
         });
       ```
-      
+
+12. Test spies   
