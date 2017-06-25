@@ -37,3 +37,18 @@ it('should expect some values',()=>{
       age:23
     });
 });
+
+//Async code test--------------------------
+it('should async add two numbers',(done)=>{
+    utils.asynAdd(3, 4, (sum)=>{
+      expect(sum).toBe(7).toBeA('number');
+      done();
+    });
+});
+
+it('sholud asyc squre one number',(done)=>{
+  utils.asynSqure(3, (squre)=>{
+    expect(squre).toBe(9).toBeA('number');
+    done();
+  });
+});

@@ -8,3 +8,16 @@ module.exports.setName = (user, fullName)=>{
   user.lastName = names[1];
   return user;
 }
+
+//async code ---------------------
+module.exports.asynAdd = (a, b, callback)=>{
+  setTimeout(()=>{
+    callback(a+b);
+  },1000);
+};
+
+module.exports.asynSqure = (a, callback)=>{
+  setTimeout(()=>{
+    callback(a*a);
+  },1000);
+};
